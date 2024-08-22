@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Warfaze </title>
+        <meta name="description" content="This Is The Discription">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="home.js" defer></script>
+
+    </header>    
+        <body>
+            <div class="main-header">
+                <nav class="nav main-nav">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="store.html">STORE</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                    </ul>
+                </nav>
+                
+                <h1 class="band-name band-name-large">Warfaze</h1>
+                 <div class="container">
+                  <button class="btn btn-header" type="button"> Get Our Latest Album</button>
+                </div>
+                <button class="btn btn-header btn-play" type="button">&#9658</button>
+            </div>
+            <section class="content-section container">
+                <h2 class="section-header">TOURS</h2>
+                <div>
+                    <div class="tour-row">
+                        <span class="tour-item tour-date">SEP 12</span>
+                       
+                        <span class="tour-item tour-city">DETROIT, MI</span>
+                        
+                        <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATER</span>
+                       
+                        <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                        
+                        
+                    </div>
+                    <div class="tour-row">
+                        <span class="tour-item tour-date">SEP 14</span>
+                        <span class="tour-item tour-city">DETROIT, MI</span>
+                        <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATER</span>
+                        <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                       
+                    </div>
+                    <div class="tour-row">
+                        <span class="tour-item tour-date">SEP 16</span>
+                        <span class="tour-item tour-city">DETROIT, MI</span>
+                        <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATER</span>
+                        <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                        
+                    </div>
+                    <div class="tour-row">
+                        <span class="tour-item tour-date">SEP 22</span>
+                        <span class="tour-item tour-city">DETROIT, MI</span>
+                        <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATER</span>
+                        <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                        
+                    </div>
+                    <div class="tour-row">
+                        <span class="tour-item tour-date">SEP 24</span>
+                        <span class="tour-item tour-city">DETROIT, MI</span>
+                        <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATER</span>
+                        <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+                        
+                    </div>
+                    <div class="tour-row">
+                        <span class="tour-item tour-date">SEP 26</span>
+                        <span class="tour-item tour-city">DETROIT, MI</span>
+                        <span class="tour-item tour-arena">DTE ENERGY MUSIC THEATER</span>                        
+                        <button type="button" class="btn tour-item tour-btn btn-primary">BUY TICKETS</button>
+
+                        
+                    </div>
+                   
+                </div>
+            </section>
+           
+            <footer class="main-footer">
+                <div class="container main-footer-container">
+                  <h3 class="band-name">Warfaze</h3>
+                    <ul class="nav footer-nav">
+                      <li>
+                        <a href="https://www.facebook.com/warfazeband/">
+                           <img src="image/facebook.png"></li>
+                        </a>
+                      <li>
+                        <a href="https://www.instagram.com/warfazeband/?hl=en">
+                            <img src="image/insta.png"></li>
+                        </a>  
+                      <li>
+                        <a href="https://www.youtube.com/channel/UCuwQYyQSDmhbolMOazGDFrg">
+                         <img src="image/youtube.png">
+                        </a>
+                      </li>
+                    </ul>
+                </div>
+            </footer>
+            <script>
+                // Wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all Buy Tickets buttons
+    const buyTicketButtons = document.querySelectorAll('.tour-btn');
+
+    // Add click event listener to each Buy Tickets button
+    buyTicketButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            // Redirect to buy-tickets.html when a button is clicked
+            window.location.href = 'buy-tickets.html';
+        });
+    });
+});
+
+            </script>
+        </body>
+    
+</html>
